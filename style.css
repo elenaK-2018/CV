@@ -160,14 +160,15 @@ body {
     margin-bottom: 29.6px;
   }
   
-  button {
-    width: 180.5px;
-    height: 42px;
-    line-height: 42px;
+  .button {
+    display: inline-block;
+    font-size: 17px;
+    padding: 13px 29.08px 12px;
     border-radius: 30px;
+    text-decoration: none;
     background-color: #070707;
-    border: none;
     color: #fff;
+    cursor: pointer;
   }
   
   .footer-link {
@@ -187,4 +188,15 @@ body {
     font-size: 14px;
     line-height: 16.98px;
   }
-  
+
+
+
+  @media (max-width: 375px) {
+
+    .image {
+      max-width: 316.5px;
+      margin-top: 36.94px 0 83px;
+    }
+
+
+  }
