@@ -1,202 +1,260 @@
 body {
-    max-width: 1445px;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .container {
-    margin: 0 auto;
-    max-width: 943.61px;
-  }
-  
-  .nav {
-    border-bottom: 1px solid #828282;
-  }
-  
-  .nav-item {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding-left: 0px;
-    margin-bottom: 31.92px;
-  }
-  
-  .link a {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-size: 18px;
-    line-height: 22.28px;
-    font-weight: bold;
-    color: #828282;
-    cursor: pointer;
-  }
-  
-  /* .nav-item :first-child{
+  max-width: 1445px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 943.61px;
+}
+
+.nav {
+  border-bottom: 1px solid #828282;
+}
+
+.nav-item {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 31.92px;
+}
+
+.link a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 22.28px;
+  font-weight: bold;
+  color: #828282;
+  cursor: pointer;
+}
+
+/* .nav-item :first-child{
     color:#070707;
   } */
-  
-  
-  .header {
-    display: flex;
-  
-    padding: 0;
-    justify-content: space-between;
+
+.header {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.name {
+  margin-top: 39.69px;
+  margin-bottom: 34.77px;
+}
+
+.info {
+  margin-top: 94.77px;
+  line-height: 21.83px;
+  font-size: 18px;
+  margin-right: 46.82px;
+}
+
+.language {
+  margin-top: 66.56px;
+}
+
+.image {
+  max-width: 943.61px;
+}
+
+.main {
+  padding-bottom: 104.06px;
+}
+
+.about {
+  max-width: 485.34px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 120.25px;
+  padding-bottom: 107px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42.09px;
+  text-align: center;
+}
+.text {
+  font-size: 18px;
+  line-height: 21.83px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 83.49px;
+}
+
+p {
+  text-align: center;
+}
+
+.skills {
+  margin-top: 91px;
+}
+
+.skills p {
+  margin-top: 69.1px;
+}
+
+.block p {
+  margin-top: 24.21px;
+  margin-bottom: 40.41px;
+}
+
+.portfolio {
+  margin-top: 222.99px;
+}
+
+.homepage-link {
+  text-align: center;
+  margin-top: 44.88px;
+  margin-bottom: 99.09px;
+}
+
+.homepage {
+  color: #070707;
+}
+
+.reebok-link {
+  text-align: center;
+  margin-top: 44.89px;
+  margin-bottom: 99.08px;
+}
+
+.reebok-a {
+  color: #070707;
+}
+
+.braun-link {
+  text-align: center;
+  margin-top: 45.9px;
+  margin-bottom: 96.07px;
+}
+
+.braun {
+  padding-bottom: 96.07px;
+}
+
+.braun-a {
+  color: #070707;
+}
+
+.contacts {
+  max-width: 342.18px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 114.24px;
+  margin-bottom: 123.19px;
+}
+
+.description {
+  margin-top: 20.03px;
+  margin-bottom: 29.6px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 13px 29.08px 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #070707;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-link {
+  margin-top: 85.78px;
+  margin-bottom: 45.06px;
+}
+
+.f-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-text {
+  color: #828282;
+  font-size: 14px;
+  line-height: 16.98px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 316.5px;
+    margin-left: 26px;
   }
-  
-  .name {
-    margin-top: 39.69px;
-    margin-bottom: 34.77px;
+
+  .nav {
+    display: none;
   }
-  
-  .info {
-    margin-top: 94.77px;
-    line-height: 21.83px;
-    font-size: 18px;
-    margin-right: 46.82px;
-  }
-  
-  .language {
-    margin-top: 66.56px;
-  }
-  
-  .image {
-    max-width: 943.61px;
-  }
-  
+
   .main {
-    padding-bottom: 104.06px;
+    padding-bottom: 0;
   }
-  
+
+  .image {
+    max-width: 316.5px;
+    margin: 36.94px 0 83px;
+  }
+
+  .name {
+    max-width: 124px;
+    margin-bottom: 23px;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .info {
+    margin-top: 0px;
+  }
+
   .about {
-    max-width: 485.34px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 120.25px;
-    padding-bottom: 107px;
+    padding-top: 81px;
+    padding-bottom: 76px;
+    max-width: 316px;
+    margin-top: 0px;
   }
-  
-  h1 {
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 42.09px;
-    text-align: center;
-  }
-  .text {
-    font-size: 18px;
-    line-height: 21.83px;
-  }
-  
-  .skills-items {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 83.49px;
-  }
-  
-  p {
-    text-align: center;
-  }
-  
   .skills {
-    margin-top: 91px;
+    margin-top: 83px;
   }
-  
+
   .skills p {
-    margin-top: 69.1px;
+    margin-top: 50px;
   }
-  
+
+  .skills-items {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 166.46px;
+    margin-bottom: 98.73px;
+  }
+
   .block p {
     margin-top: 24.21px;
     margin-bottom: 40.41px;
   }
-  
+
+  .block {
+    margin-top: 81.71px;
+  }
+
   .portfolio {
-    margin-top: 222.99px;
+    padding-top: 81px;
+    margin-top: 0px;
   }
-  
-  .homepage-link {
-    text-align: center;
-    margin-top: 44.88px;
-    margin-bottom: 99.09px;
-  }
-  
-  .homepage {
-    color: #070707;
-  }
-  
-  .reebok-link {
-    text-align: center;
-    margin-top: 44.89px;
-    margin-bottom: 99.08px;
-  }
-  
-  .reebok-a {
-    color: #070707;
-  }
-  
-  .braun-link {
-    text-align: center;
-    margin-top: 45.9px;
-    margin-bottom: 96.07px;
-  }
-  
-  .braun {
-    padding-bottom: 96.07px;
-  }
-  
-  .braun-a {
-    color: #070707;
-  }
-  
-  .contacts {
-    max-width: 342.18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 114.24px;
-    margin-bottom: 123.19px;
-  }
-  
-  .description {
-    margin-top: 20.03px;
-    margin-bottom: 29.6px;
-  }
-  
-  .button {
-    display: inline-block;
-    font-size: 17px;
-    padding: 13px 29.08px 12px;
-    border-radius: 30px;
-    text-decoration: none;
-    background-color: #070707;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .footer-link {
-    margin-top: 85.78px;
-    margin-bottom: 45.06px;
-  }
-  
-  .f-links {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .footer-text {
-    color: #828282;
-    font-size: 14px;
-    line-height: 16.98px;
-  }
-
-
-
-  @media (max-width: 375px) {
-
-    .image {
-      max-width: 316.5px;
-      margin-top: 36.94px 0 83px;
-    }
-
-
-  }
+}
