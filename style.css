@@ -281,6 +281,10 @@ p {
   padding-bottom: 0px;
  }
 
+  .block {
+    margin-top: 81.71px;
+  }
+
  .braun  img {
   width: 316px;  
  }
@@ -320,9 +324,7 @@ p {
   margin-top: 68px;
   position: absolute;
   cursor: pointer;
-
 }
-
 
 }
   
