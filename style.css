@@ -219,7 +219,7 @@ p {
   .header {
     flex-direction: column;
   }
-
+  
   .info {
     margin-top: 0px;
   }
@@ -253,6 +253,7 @@ p {
   .block {
     margin-top: 81.71px;
   }
+
 
   .portfolio {
     padding-top: 81px;
@@ -324,3 +325,5 @@ p {
 
 
 }
+  
+ 
