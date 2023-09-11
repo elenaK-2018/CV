@@ -8,6 +8,10 @@ body {
   max-width: 943.61px;
 }
 
+.menu {
+  display: none;
+}
+
 .nav {
   border-bottom: 1px solid #828282;
 }
@@ -30,9 +34,9 @@ body {
   cursor: pointer;
 }
 
-/* .nav-item :first-child{
-    color:#070707;
-  } */
+.nav-item > li > .home {
+  color: #070707;
+}
 
 .header {
   display: flex;
@@ -54,10 +58,6 @@ body {
 
 .language {
   margin-top: 66.56px;
-}
-
-.image {
-  max-width: 943.61px;
 }
 
 .main {
@@ -111,6 +111,10 @@ p {
   margin-top: 222.99px;
 }
 
+.portfolio img {
+  max-width: 100%;
+}
+
 .homepage-link {
   text-align: center;
   margin-top: 44.88px;
@@ -127,6 +131,10 @@ p {
   margin-bottom: 99.08px;
 }
 
+.reebok img {
+  width: 100%;
+}
+
 .reebok-a {
   color: #070707;
 }
@@ -139,6 +147,10 @@ p {
 
 .braun {
   padding-bottom: 96.07px;
+}
+
+.braun img {
+  width: 100%;
 }
 
 .braun-a {
@@ -187,7 +199,52 @@ p {
   line-height: 16.98px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 965px) {
+  .nav-item {
+    justify-content: space-around;
+  }
+  .header {
+    justify-content: space-around;
+  }
+  .skills-items {
+    flex-wrap: wrap;
+  }
+
+  .braun {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 790px) {
+  .image {
+    width: 100%;
+    margin: 36.94px 100px 83px;
+  }
+
+  .block {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .contacts {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 470px) {
+  .image {
+    margin: 36.94px 40px 83px;
+  }
+}
+
+@media (max-width: 413px) {
+  .block {
+    width: 268px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) {
   .container {
     max-width: 316.5px;
     margin-left: 26px;
@@ -219,7 +276,7 @@ p {
   .header {
     flex-direction: column;
   }
-  
+
   .info {
     margin-top: 0px;
   }
@@ -252,78 +309,74 @@ p {
 
   .block {
     margin-top: 81.71px;
+    width: 168px;
   }
-
 
   .portfolio {
     padding-top: 81px;
     margin-top: 0px;
   }
- .portfolio img {
-  width: 316px;
-  margin-top: 64.94px;
- }
- .homepage-link {
-  margin-top: 33px;
-  margin-bottom: 77.97px;
- }
+  .portfolio img {
+    width: 316px;
+    margin-top: 64.94px;
+  }
+  .homepage-link {
+    margin-top: 33px;
+    margin-bottom: 77.97px;
+  }
 
- .reebok img {
-  width: 316px;
- }
+  .reebok img {
+    width: 316px;
+  }
 
- .reebok-link {
-  margin-top: 35px;
-  margin-bottom: 77.97px;
- }
+  .reebok-link {
+    margin-top: 35px;
+    margin-bottom: 77.97px;
+  }
 
- .braun {
-  padding-bottom: 0px;
- }
+  .braun {
+    padding-bottom: 0px;
+  }
 
- .braun  img {
-  width: 316px;  
- }
+  .braun img {
+    width: 316px;
+  }
 
-.braun-link {
-  margin-top: 35px;
-  margin-bottom: 80.97px;
+  .braun-link {
+    margin-top: 35px;
+    margin-bottom: 80.97px;
+  }
+
+  .contacts {
+    margin-top: 82px;
+    margin-bottom: 90px;
+  }
+
+  .description {
+    margin-top: 27.03px;
+    margin-bottom: 39.84px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 12px 97px;
+  }
+
+  .footer-link {
+    margin-top: 48px;
+    margin-bottom: 48.8px;
+  }
+
+  .footer-text {
+    font-size: 18px;
+    line-height: 21.83px;
+  }
+
+  .menu {
+    display: flex;
+    margin-left: 286px;
+    margin-top: 68px;
+    position: absolute;
+    cursor: pointer;
+  }
 }
-
-.contacts {
-  margin-top: 82px;
-  margin-bottom: 90px;
-}
-
-.description {
-  margin-top: 27.03px;
-  margin-bottom: 39.84px;
-}
-
-.button {
-  font-size: 18px;
-  padding: 12px 97px;
-}
-
-.footer-link {
-  margin-top: 48px;
-  margin-bottom: 48.8px;
-}
-
-.footer-text {
-  font-size: 18px;
-  line-height: 21.83px;
-}
-
-.menu {
-  margin-left: 286px;
-  margin-top: 68px;
-  position: absolute;
-  cursor: pointer;
-
-}
-
-
-}
-  
- 
