@@ -1,190 +1,461 @@
 body {
-    max-width: 1445px;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .container {
-    margin: 0 auto;
-    max-width: 943.61px;
-  }
-  
-  .nav {
-    border-bottom: 1px solid #828282;
-  }
-  
+  max-width: 1445px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 943.61px;
+}
+
+.open {
+  display: flex !important;
+}
+
+.menu-btn {
+  display: none;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  margin-left: 330px;
+  margin-top: 0px;
+  justify-content: end;
+}
+
+.menu-btn span {
+  height: 5px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #070707;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #070707;
+  transition: all 0.3s ease 0s;
+}
+
+.menu-btn::before {
+  top: 0;
+}
+.menu-btn::after {
+  bottom: 0;
+}
+
+.menu-btn.active span {
+  transform: scale(0);
+}
+
+.menu-btn.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.menu-btn.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+.nav {
+  border-bottom: 1px solid #828282;
+}
+
+.nav-item {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 31.92px;
+}
+
+.link a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 22.28px;
+  font-weight: bold;
+  color: #828282;
+  cursor: pointer;
+}
+
+.nav-item > li > .home {
+  color: #070707;
+}
+
+.header {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.name {
+  margin-top: 39.69px;
+  margin-bottom: 34.77px;
+}
+
+.info {
+  margin-top: 94.77px;
+  line-height: 21.83px;
+  font-size: 18px;
+  margin-right: 46.82px;
+}
+
+.language {
+  margin-top: 66.56px;
+}
+
+.about {
+  max-width: 485.34px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 120.25px;
+  padding-bottom: 107px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42.09px;
+  text-align: center;
+  margin: 0 auto;
+}
+.text {
+  font-size: 18px;
+  line-height: 21.83px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 83.49px;
+}
+
+p {
+  text-align: center;
+}
+
+.skills {
+  margin-top: 91px;
+}
+
+.skills p {
+  margin-top: 69.1px;
+}
+
+.block p {
+  margin-top: 24.21px;
+  margin-bottom: 40.41px;
+}
+
+.portfolio {
+  margin-top: 222.99px;
+}
+
+.portfolio img {
+  max-width: 100%;
+}
+
+.homepage-link {
+  text-align: center;
+  margin-top: 44.88px;
+  margin-bottom: 99.09px;
+}
+
+.homepage {
+  color: #070707;
+}
+
+.reebok-link {
+  text-align: center;
+  margin-top: 44.89px;
+  margin-bottom: 99.08px;
+}
+
+.reebok img {
+  max-width: 100%;
+}
+
+.reebok-a {
+  color: #070707;
+}
+
+.braun-link {
+  text-align: center;
+  margin-top: 45.9px;
+  margin-bottom: 96.07px;
+}
+
+.braun {
+  padding-bottom: 96.07px;
+}
+
+.braun img {
+  max-width: 100%;
+}
+
+.braun-a {
+  color: #070707;
+}
+
+.contacts {
+  max-width: 342.18px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 114.24px;
+  margin-bottom: 123.19px;
+}
+
+.description {
+  margin-top: 20.03px;
+  margin-bottom: 29.6px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 13px 29.08px 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #070707;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-link {
+  margin-top: 85.78px;
+  margin-bottom: 45.06px;
+}
+
+.f-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-text {
+  color: #828282;
+  font-size: 14px;
+  line-height: 16.98px;
+}
+
+@media (max-width: 965px) {
   .nav-item {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding-left: 0px;
-    margin-bottom: 31.92px;
+    justify-content: space-around;
   }
-  
-  .link a {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-size: 18px;
-    line-height: 22.28px;
-    font-weight: bold;
-    color: #828282;
-    cursor: pointer;
-  }
-  
-  /* .nav-item :first-child{
-    color:#070707;
-  } */
-  
-  
   .header {
-    display: flex;
-  
-    padding: 0;
-    justify-content: space-between;
+    justify-content: space-around;
   }
-  
-  .name {
-    margin-top: 39.69px;
-    margin-bottom: 34.77px;
+  .skills-items {
+    flex-wrap: wrap;
   }
-  
-  .info {
-    margin-top: 94.77px;
-    line-height: 21.83px;
-    font-size: 18px;
-    margin-right: 46.82px;
+
+  .braun {
+    padding-bottom: 0px;
   }
-  
-  .language {
-    margin-top: 66.56px;
-  }
-  
+}
+
+@media (max-width: 790px) {
   .image {
-    max-width: 943.61px;
+    width: 100%;
+    margin: 36.94px 50px 83px;
   }
-  
-  .main {
-    padding-bottom: 104.06px;
+
+  .block {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .contacts {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 470px) {
+  .container {
+    max-width: 316.5px;
+    margin-left: 26px;
+  }
+
+  .info {
+    margin-top: 0px;
+  }
+
+  .header {
+    flex-direction: column;
+  } 
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 820px;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #fff;
+    animation: burgerAnimation;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    row-gap: 68px;
+  }
+
+  .link a {
+    font-size: 34px;
+    line-height: 42.09px;
+  }
+
+  .language {
+    display: none;
+  }
+}
+
+@media (max-width: 453px) {
+  .block {
+    width: 268px;
+    margin: 0 auto;
+  }
+
+  .image {
+    max-width: 316.5px;
+    margin: 36.94px 0 83px;
+  }
+
+  .menu-btn {
+    display: flex;
+    margin-left: 267px;
+  }
+}
+
+@media (max-width: 380px) {
+ .name {
+    max-width: 124px;
+    margin-bottom: 23px;
+    margin-top: 65px;
   }
   
   .about {
-    max-width: 485.34px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 120.25px;
-    padding-bottom: 107px;
-  }
-  
-  h1 {
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 42.09px;
-    text-align: center;
-  }
-  .text {
-    font-size: 18px;
-    line-height: 21.83px;
-  }
-  
-  .skills-items {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 83.49px;
-  }
-  
-  p {
-    text-align: center;
+    padding-top: 81px;
+    padding-bottom: 76px;
+    max-width: 316px;
+    margin-top: 0px;
   }
   
   .skills {
-    margin-top: 91px;
+    margin-top: 83px;
   }
-  
+
   .skills p {
-    margin-top: 69.1px;
+    margin-top: 50px;
   }
-  
+
+  .skills-items {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 166.46px;
+    margin-bottom: 98.73px;
+  }
+
   .block p {
     margin-top: 24.21px;
     margin-bottom: 40.41px;
   }
-  
+
+  .block {
+    margin-top: 81.71px;
+    width: 168px;
+  }
+
   .portfolio {
-    margin-top: 222.99px;
+    padding-top: 81px;
+    margin-top: 0px;
   }
-  
+  .portfolio img {
+    width: 316px;
+    margin-top: 64.94px;
+  }
+
   .homepage-link {
-    text-align: center;
-    margin-top: 44.88px;
-    margin-bottom: 99.09px;
+    margin-top: 33px;
+    margin-bottom: 77.97px;
   }
-  
-  .homepage {
-    color: #070707;
+
+  .reebok img {
+    width: 316px;
   }
-  
+
   .reebok-link {
-    text-align: center;
-    margin-top: 44.89px;
-    margin-bottom: 99.08px;
+    margin-top: 35px;
+    margin-bottom: 77.97px;
   }
-  
-  .reebok-a {
-    color: #070707;
-  }
-  
-  .braun-link {
-    text-align: center;
-    margin-top: 45.9px;
-    margin-bottom: 96.07px;
-  }
-  
+
   .braun {
-    padding-bottom: 96.07px;
+    padding-bottom: 0px;
   }
-  
-  .braun-a {
-    color: #070707;
+
+  .braun img {
+    width: 316px;
   }
-  
+
+  .braun-link {
+    margin-top: 35px;
+    margin-bottom: 80.97px;
+  }
+
   .contacts {
-    max-width: 342.18px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 114.24px;
-    margin-bottom: 123.19px;
+    margin-top: 82px;
+    margin-bottom: 90px;
   }
-  
+
   .description {
-    margin-top: 20.03px;
-    margin-bottom: 29.6px;
+    margin-top: 27.03px;
+    margin-bottom: 39.84px;
   }
-  
-  button {
-    width: 180.5px;
-    height: 42px;
-    line-height: 42px;
-    border-radius: 30px;
-    background-color: #070707;
-    border: none;
-    color: #fff;
+
+  .button {
+    font-size: 18px;
+    padding: 12px 97px;
   }
-  
+
   .footer-link {
-    margin-top: 85.78px;
-    margin-bottom: 45.06px;
+    margin-top: 48px;
+    margin-bottom: 48.8px;
   }
-  
-  .f-links {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 0;
-  }
-  
+
   .footer-text {
-    color: #828282;
-    font-size: 14px;
-    line-height: 16.98px;
+    font-size: 18px;
+    line-height: 21.83px; 
   }
-  
+}
+ 
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ 
+
+
+ 
