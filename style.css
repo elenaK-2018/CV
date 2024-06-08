@@ -1,11 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 1445px;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 943.61px;
+  max-width: 985px;
+  padding: 0 20px;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
 }
 
 .open {
